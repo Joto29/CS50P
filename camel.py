@@ -1,7 +1,6 @@
 def main():
     camel_word = input("caseCamel: ")
     return convert(camel_word)
-    ...
 
 def convert(s):
     new_string = ""
