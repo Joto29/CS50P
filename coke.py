@@ -8,7 +8,6 @@ def main():
 
         if coin in coins:
             amount_due -= coin
-    print(f"Change Owed: {amount_due}")
-
+    print(f"Change Owed: {abs(amount_due)}")
 
 main()
