@@ -37,7 +37,7 @@ def convert_date_a(date):
     year = int(year)
 
     if  1 <= day <= 31 and 1 <= month <= 12 :
-        return f"{year}-{month:02d}-{day}"
+        return f"{year}-{month:02d}-{day:02d}"
     else:
         raise ValueError
 
@@ -50,7 +50,7 @@ def convert_date_b(date):
             year = int(year)
 
             if  1 <= day <= 31 and 1 <= month <= 12 :
-                return f"{year}-{month:02d}-{day}"
+                return f"{year}-{month:02d}-{day:02d}"
             else:
                 raise ValueError
 
