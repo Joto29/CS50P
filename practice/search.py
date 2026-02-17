@@ -6,4 +6,5 @@ def main():
     for artist in artists:
         print(f"* {artist}")
 
-main()
+if __name__ == "__main__":
+    main()
