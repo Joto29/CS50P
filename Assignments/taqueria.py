@@ -19,7 +19,7 @@ def get_item():
     while True:
         try:
             item = input("Item: ")
-            i
+            
             return item
         except EOFError:
             pass
