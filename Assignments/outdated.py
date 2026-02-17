@@ -1,4 +1,4 @@
-#Ask the user for the date:
+# Ask the user for the date:
 list_of_months = [
     "January",
     "February",
@@ -11,15 +11,17 @@ list_of_months = [
     "September",
     "October",
     "November",
-    "December"
+    "December",
 ]
+
+
 def main():
     while True:
         try:
             date = input("Date: ")
             if "/" in date:
                 print(convert_date_a(date))
-                return 
+                return
             for month in list_of_months:
                 if month in date:
                     print(convert_date_b(date))
@@ -29,17 +31,18 @@ def main():
 
 
 def convert_date_a(date):
-    #convert the input to valid numbers 
+    # convert the input to valid numbers
     month, day, year = date.split("/")
 
     month = int(month)
     day = int(day)
     year = int(year)
 
-    if  1 <= day <= 31 and 1 <= month <= 12 :
+    if 1 <= day <= 31 and 1 <= month <= 12:
         return f"{year}-{month:02d}-{day:02d}"
     else:
         raise ValueError
+
 
 def convert_date_b(date):
     for month in list_of_months:
@@ -49,9 +52,10 @@ def convert_date_b(date):
             day = int(day)
             year = int(year)
 
-            if  1 <= day <= 31 and 1 <= month <= 12 :
+            if 1 <= day <= 31 and 1 <= month <= 12:
                 return f"{year}-{month:02d}-{day:02d}"
             else:
                 raise ValueError
+
 
 main()

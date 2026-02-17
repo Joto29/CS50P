@@ -1,6 +1,7 @@
 def main():
     print(get_fuel("Fraction: "))
 
+
 def get_fuel(prompt):
     while True:
         try:
@@ -23,5 +24,6 @@ def get_fuel(prompt):
 
         except (ZeroDivisionError, ValueError):
             pass
+
 
 main()

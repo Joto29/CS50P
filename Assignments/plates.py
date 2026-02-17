@@ -22,14 +22,13 @@ def is_valid(s):
     # rules 4 & 5: digit rules
     for i, ch in enumerate(s):
         if ch.isdigit():
-            if ch == '0':
+            if ch == "0":
                 return False
             if not s[i:].isdigit():
                 return False
             break
 
     return True
-
 
 
 main()

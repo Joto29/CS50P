@@ -1,5 +1,5 @@
 def main():
-    fruits =[
+    fruits = [
         {"fruit": "Apple", "calories": 130},
         {"fruit": "Avocado", "calories": 50},
         {"fruit": "Banana", "calories": 110},
@@ -20,7 +20,7 @@ def main():
         {"fruit": "Sweet Cherries", "calories": 100},
         {"fruit": "Tangerine", "calories": 50},
         {"fruit": "Tomato", "calories": 50},
-        {"fruit": "Watermelon", "calories": 80}
+        {"fruit": "Watermelon", "calories": 80},
     ]
 
     item = input("Item: ").title()
@@ -28,5 +28,5 @@ def main():
         if item == i["fruit"]:
             print("Calories: ", i["calories"])
 
-    
+
 main()

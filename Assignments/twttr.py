@@ -10,4 +10,5 @@ def convert(words):
             new_word += word
     return print(f"Output: {new_word}")
 
+
 main()

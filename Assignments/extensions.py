@@ -1,8 +1,8 @@
 def main():
-    #prompt the user for file
+    # prompt the user for file
     file_inp = input("File name: ").lower()
 
-    #check conditions 
+    # check conditions
     if file_inp.endswith(".gif"):
         print("image/gif")
     elif file_inp.endswith(".jpg") or file_inp.endswith(".jpeg"):
@@ -17,5 +17,6 @@ def main():
         print("application/zip")
     else:
         print("application/octet-stream")
+
 
 main()

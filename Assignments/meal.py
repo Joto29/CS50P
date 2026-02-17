@@ -1,17 +1,19 @@
 def main():
-    #prompt the user
+    # prompt the user
     inp = input("What time is it? ")
     result = convert(inp)
-    
+
     if result is not None:
         print(result)
+
 
 def convert(time):
     hours, minutes = time.split(":")
     hours = int(hours)
-    minutes = int(minutes)/ 60
+    minutes = int(minutes) / 60
     converted_time = float(hours + minutes)
     return meal_time(converted_time)
+
 
 def meal_time(meal_hours):
     if meal_hours >= 7.0 and meal_hours <= 8.0:
@@ -22,5 +24,6 @@ def meal_time(meal_hours):
         return print("Dinner Time")
     else:
         return None
+
 
 main()
