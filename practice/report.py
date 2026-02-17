@@ -3,6 +3,7 @@ def main():
     spacecraft.update({"distance": 0.01, "orbit": "Sun"})
     print(create_report(spacecraft))
 
+
 def create_report(spacecraft):
     return f"""
     =========== REPORT ==============
@@ -13,5 +14,6 @@ def create_report(spacecraft):
 
     =================================
     """
+
 
 main()
